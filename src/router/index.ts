@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import OnlineStore from '../views/OnlineStore.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -15,11 +16,11 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
-  // {
-  //   path: '/online-store',
-  //   name: 'online-store',
-
-  // }
+  {
+    path: '/online-store',
+    name: 'online-store',
+    component: OnlineStore
+  }
 ]
 
 const router = createRouter({

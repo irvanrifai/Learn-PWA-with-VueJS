@@ -1,26 +1,56 @@
 <template>
   <div class="home">
-    <div>
-      <!-- Image and text -->
-      <b-navbar variant="faded" type="light">
-        <b-navbar-brand href="#">
-          <img src="../assets/swakarta-icon.png" width="50" class="d-inline-block align-top" alt="Swakarta">
-          Swakarta
-        </b-navbar-brand>
-      </b-navbar>
-    </div>
     <Navbar/>
+    <Hero/>
+    <div class="container">
+      <div class="row m-3 mt-4">
+        <div class="col">
+          <h5>Best <strong>Products</strong></h5>
+        </div>
+        <div class="col">
+          <router-link to="/all-products" class="btn btn-outline-success float-right">More product</router-link>
+        </div>
+      </div>
+
+      <div class="row m-3 mb-3">
+        <div class="col-md-3 mt-4" v-for="product in products" :key="product.id">
+          <CardProduct :product="product"/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import Navbar from '@/components/Navbar.vue'; // @ is an alias to /src
+import Hero from '@/components/Hero.vue'; // @ is an alias to /src
+import CardProduct from '@/components/CardProduct.vue'; // @ is an alias to /src
+
+import axios from 'axios';
 
 @Options({
   components: {
     Navbar,
+    Hero,
+    CardProduct
   },
+  data(){
+    return {
+      products:[]
+    }
+  },
+  methods:{
+    setProducts(data:[]){
+      this.products = data
+    }
+  },
+  mounted(){
+    axios
+    .get('http://192.168.100.137:8000/best_products')
+    .then((response) => this.setProducts(response.data))
+    .catch((error) => console.log(error));
+  }
 })
 export default class HomeView extends Vue {}
 </script>
