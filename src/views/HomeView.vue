@@ -3,15 +3,16 @@
     <Navbar/>
     <Hero/>
     <div class="container">
-      <div class="row m-3 mt-4">
+      <div class="row m-3 mt-5">
         <div class="col">
           <h5>Best <strong>Products</strong></h5>
         </div>
         <div class="col">
-          <router-link to="/all-products" class="btn btn-outline-success float-right">More product</router-link>
+          <router-link to="/online-store" class="btn btn-outline-success float-right">More product</router-link>
         </div>
       </div>
 
+      <!-- looping data -->
       <div class="row m-3 mb-3">
         <div class="col-md-3 mt-4" v-for="product in products" :key="product.id">
           <CardProduct :product="product"/>
@@ -47,7 +48,7 @@ import axios from 'axios';
   },
   mounted(){
     axios
-    .get('http://192.168.100.137:8000/best_products')
+    .get(process.env.VUE_APP_IP_KOS + 'best_products')
     .then((response) => this.setProducts(response.data))
     .catch((error) => console.log(error));
   }

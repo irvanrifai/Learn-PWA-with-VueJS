@@ -10,7 +10,7 @@
                 <strong>Can buy anything you want!</strong> <br />from anyscreen
               </h4>
               <p>Let's fill your cart with something you love</p>
-              <button class="btn btn-lg btn-success">
+              <router-link to="/online-store" class="btn btn-lg btn-success">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -25,7 +25,7 @@
                   />
                 </svg>
                 Shop
-              </button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
     <div class="d-sm-block d-md-none">
       <div class="row m-3 mt-4">
         <div class="col-md-6">
-          <img src="../assets/img/hero-img.png" alt="hero-img" width="500" />
+          <img src="../assets/img/hero-img.png" alt="hero-img" width="300" />
         </div>
         <div class="col-md-6">
           <div class="d-flex h-100">
@@ -48,7 +48,7 @@
                 <strong>Can buy anything you want!</strong> <br />from anyscreen
               </h4>
               <p>Let's fill your cart with something you love</p>
-              <button class="btn btn-lg btn-success">
+              <router-link to="/online-store" class="btn btn-lg btn-success">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -63,7 +63,7 @@
                   />
                 </svg>
                 Shop
-              </button>
+            </router-link>
             </div>
           </div>
         </div>
