@@ -4,7 +4,7 @@
     <div class="card-body">
       <h5 class="card-title">{{ product.name }}</h5>
       <p class="card-text">Rp . {{ product.price }}</p>
-      <router-link :to="'/item/' + product.product_code" class="btn btn-success">Buy</router-link>
+      <router-link :to="'/item/' + product.id" class="btn btn-success">Buy</router-link>
     </div>
   </div>
 </template>

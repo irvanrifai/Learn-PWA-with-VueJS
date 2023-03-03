@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        Copyright Swakarta.id 2023
+                        Copyright Blonjo.id 2023
                     </div>
                 </div>
             </div>

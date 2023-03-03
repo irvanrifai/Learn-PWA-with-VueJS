@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import OnlineStore from '../views/OnlineStore.vue'
 import ItemDetail from '../views/ItemDetail.vue'
+import Cart from '../views/Cart.vue'
+import CheckoutSuccess from '../views/CheckoutSuccess.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,14 +25,19 @@ const routes: Array<RouteRecordRaw> = [
     component: OnlineStore
   },
   {
-    path: '/item/:product_code',
+    path: '/item/:id',
     name: 'item-detail',
     component: ItemDetail
   },
   {
-    path: '/online-store',
-    name: 'online-store',
-    component: OnlineStore
+    path: '/cart',
+    name: 'cart',
+    component: Cart
+  },
+  {
+    path: '/checkout-success',
+    name: 'checkout-success',
+    component: CheckoutSuccess
   }
 ]
 

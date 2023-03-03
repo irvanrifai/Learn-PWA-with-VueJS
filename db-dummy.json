@@ -1,88 +1,325 @@
 {
-    "best_products": [
-        { 
-            "id": 1, 
-            "product_code": "Nike-H", 
-            "name": "Nike Hypervenom",
-            "price":1000000,
-            "is_ready": true,
-            "image":"nike.jpg"
-        },
-        { 
-            "id": 2, 
-            "product_code": "Ball-H", 
-            "name": "Ball Hypervenom",
-            "price":140000,
-            "is_ready": true,
-            "image":"ball.jpg"
-        },
-        { 
-            "id": 3, 
-            "product_code": "Nike-Act", 
+  "best_products": [
+    {
+      "id": 1,
+      "product_code": "Nike-H",
+      "name": "Nike Hypervenom",
+      "price": 1000000,
+      "is_ready": true,
+      "image": "nike.jpg"
+    },
+    {
+      "id": 2,
+      "product_code": "Ball-H",
+      "name": "Ball Hypervenom",
+      "price": 140000,
+      "is_ready": true,
+      "image": "ball.jpg"
+    },
+    {
+      "id": 3,
+      "product_code": "Nike-Act",
+      "name": "Nike Shirt",
+      "price": 18000,
+      "is_ready": true,
+      "image": "nike-s.jpg"
+    },
+    {
+      "id": 4,
+      "product_code": "Nike-gala",
+      "name": "Nike Gala",
+      "price": 2000000,
+      "is_ready": true,
+      "image": "nike-gl.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "product_code": "Nike-H",
+      "name": "Nike Hypervenom",
+      "price": 1000000,
+      "is_ready": true,
+      "image": "nike.jpg"
+    },
+    {
+      "id": 2,
+      "product_code": "Ball-H",
+      "name": "Ball Hypervenom",
+      "price": 140000,
+      "is_ready": true,
+      "image": "ball.jpg"
+    },
+    {
+      "id": 3,
+      "product_code": "Nike-Act",
+      "name": "Nike Shirt",
+      "price": 18000,
+      "is_ready": true,
+      "image": "nike-s.jpg"
+    },
+    {
+      "id": 4,
+      "product_code": "Nike-gala",
+      "name": "Nike Gala",
+      "price": 2000000,
+      "is_ready": true,
+      "image": "nike-gl.jpg"
+    },
+    {
+      "id": 5,
+      "product_code": "Laptop",
+      "name": "Acer Axios",
+      "price": 8000000,
+      "is_ready": true,
+      "image": "acer.jpg"
+    },
+    {
+      "id": 6,
+      "product_code": "Adidas",
+      "name": "Adidas Messi",
+      "price": 1400000,
+      "is_ready": true,
+      "image": "adidas.jpg"
+    },
+    {
+      "id": 7,
+      "product_code": "AC",
+      "name": "AC Polytron",
+      "price": 13000000,
+      "is_ready": true,
+      "image": "ac.jpg"
+    },
+    {
+      "id": 8,
+      "product_code": "printer",
+      "name": "Printer HP",
+      "price": 100000,
+      "is_ready": true,
+      "image": "printer.jpg"
+    },
+    {
+      "id": 9,
+      "product_code": "macbook",
+      "name": "Macbook M-2",
+      "price": 40000000,
+      "is_ready": true,
+      "image": "mac.jpg"
+    },
+    {
+      "id": 10,
+      "product_code": "iphone",
+      "name": "Iphone 12 Pro",
+      "price": 12000000,
+      "is_ready": true,
+      "image": "iphone.jpg"
+    }
+  ],
+  "keranjangs": [
+    {
+      "order_qty": 2,
+      "products": {
+        "id": 3,
+        "product_code": "Nike-Act",
+        "name": "Nike Shirt",
+        "price": 18000,
+        "is_ready": true,
+        "image": "nike-s.jpg"
+      },
+      "id": 5
+    },
+    {
+      "order_qty": 20,
+      "products": {
+        "id": 3,
+        "product_code": "Nike-Act",
+        "name": "Nike Shirt",
+        "price": 18000,
+        "is_ready": true,
+        "image": "nike-s.jpg"
+      },
+      "id": 6
+    },
+    {
+      "order_qty": 31,
+      "products": {
+        "id": 3,
+        "product_code": "Nike-Act",
+        "name": "Nike Shirt",
+        "price": 18000,
+        "is_ready": true,
+        "image": "nike-s.jpg"
+      },
+      "id": 7
+    },
+    {
+      "order_qty": 2,
+      "note": "Black ",
+      "products": {
+        "id": 10,
+        "product_code": "iphone",
+        "name": "Iphone 12 Pro",
+        "price": 12000000,
+        "is_ready": true,
+        "image": "iphone.jpg"
+      },
+      "id": 15
+    },
+    {
+      "order_qty": 1,
+      "note": "Warna hitam",
+      "products": {
+        "id": 9,
+        "product_code": "macbook",
+        "name": "Macbook M-2",
+        "price": 40000000,
+        "is_ready": true,
+        "image": "mac.jpg"
+      },
+      "id": 16
+    }
+  ],
+  "pesanans": [
+    {
+      "name": "Irvan Rifaí",
+      "no_order": "12345",
+      "order": [
+        {
+          "order_qty": 2,
+          "products": {
+            "id": 3,
+            "product_code": "Nike-Act",
             "name": "Nike Shirt",
-            "price":18000,
+            "price": 18000,
             "is_ready": true,
-            "image":"nike-s.jpg"
+            "image": "nike-s.jpg"
+          },
+          "id": 5
         },
-        { 
-            "id": 4, 
-            "product_code": "Nike-gala", 
-            "name": "Nike Gala",
-            "price":2000000,
+        {
+          "order_qty": 20,
+          "products": {
+            "id": 3,
+            "product_code": "Nike-Act",
+            "name": "Nike Shirt",
+            "price": 18000,
             "is_ready": true,
-            "image":"nike-gl.jpg"
-        }
-    ],
-    "products": [
-        { 
-            "id": 5, 
-            "product_code": "Laptop", 
-            "name": "Acer Axios",
-            "price":8000000,
-            "is_ready": true,
-            "image":"acer.jpg"
+            "image": "nike-s.jpg"
+          },
+          "id": 6
         },
-        { 
-            "id": 6, 
-            "product_code": "Adidas", 
-            "name": "Adidas Messi",
-            "price":1400000,
+        {
+          "order_qty": 31,
+          "products": {
+            "id": 3,
+            "product_code": "Nike-Act",
+            "name": "Nike Shirt",
+            "price": 18000,
             "is_ready": true,
-            "image":"adidas.jpg"
+            "image": "nike-s.jpg"
+          },
+          "id": 7
         },
-        { 
-            "id": 7, 
-            "product_code": "AC", 
-            "name": "AC Polytron",
-            "price":13000000,
-            "is_ready": true,
-            "image":"ac.jpg"
-        },
-        { 
-            "id": 8, 
-            "product_code": "printer", 
-            "name": "Printer HP",
-            "price":100000,
-            "is_ready": true,
-            "image":"printer.jpg"
-        },
-        { 
-            "id": 9, 
-            "product_code": "macbook", 
-            "name": "Macbook M-2",
-            "price":40000000,
-            "is_ready": true,
-            "image":"mac.jpg"
-        },
-        { 
-            "id": 10, 
-            "product_code": "iphone", 
+        {
+          "order_qty": 2,
+          "note": "Black ",
+          "products": {
+            "id": 10,
+            "product_code": "iphone",
             "name": "Iphone 12 Pro",
-            "price":12000000,
+            "price": 12000000,
             "is_ready": true,
-            "image":"iphone.jpg"
+            "image": "iphone.jpg"
+          },
+          "id": 15
+        },
+        {
+          "order_qty": 1,
+          "note": "Warna hitam",
+          "products": {
+            "id": 9,
+            "product_code": "macbook",
+            "name": "Macbook M-2",
+            "price": 40000000,
+            "is_ready": true,
+            "image": "mac.jpg"
+          },
+          "id": 16
         }
-    ],
-    "keranjangs": [],
-    "pesanans": []
+      ],
+      "id": 1
+    },
+    {
+      "name": "Irvan Rifaí",
+      "no_order": "123",
+      "order": [
+        {
+          "order_qty": 2,
+          "products": {
+            "id": 3,
+            "product_code": "Nike-Act",
+            "name": "Nike Shirt",
+            "price": 18000,
+            "is_ready": true,
+            "image": "nike-s.jpg"
+          },
+          "id": 5
+        },
+        {
+          "order_qty": 20,
+          "products": {
+            "id": 3,
+            "product_code": "Nike-Act",
+            "name": "Nike Shirt",
+            "price": 18000,
+            "is_ready": true,
+            "image": "nike-s.jpg"
+          },
+          "id": 6
+        },
+        {
+          "order_qty": 31,
+          "products": {
+            "id": 3,
+            "product_code": "Nike-Act",
+            "name": "Nike Shirt",
+            "price": 18000,
+            "is_ready": true,
+            "image": "nike-s.jpg"
+          },
+          "id": 7
+        },
+        {
+          "order_qty": 2,
+          "note": "Black ",
+          "products": {
+            "id": 10,
+            "product_code": "iphone",
+            "name": "Iphone 12 Pro",
+            "price": 12000000,
+            "is_ready": true,
+            "image": "iphone.jpg"
+          },
+          "id": 15
+        },
+        {
+          "order_qty": 1,
+          "note": "Warna hitam",
+          "products": {
+            "id": 9,
+            "product_code": "macbook",
+            "name": "Macbook M-2",
+            "price": 40000000,
+            "is_ready": true,
+            "image": "mac.jpg"
+          },
+          "id": 16
+        }
+      ],
+      "id": 2
+    },
+    [],
+    [],
+    []
+  ]
 }

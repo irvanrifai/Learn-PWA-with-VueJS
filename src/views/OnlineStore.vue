@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Navbar />
+  <div class="online-store">
+    <Navbar/>
     <div class="container">
       <div class="row mt-4">
         <div class="col">
