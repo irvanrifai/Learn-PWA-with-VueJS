@@ -57,14 +57,14 @@ import axios from 'axios';
     },
     searchItem(){
         axios
-        .get(process.env.VUE_APP_IP_KOS + 'products?q=' + this.search)
+        .get(process.env.VUE_APP_IP_KANTOR + 'products?q=' + this.search)
         .then((response) => this.setProducts(response.data))
         .catch((error) => console.log(error));
     }
   },
   mounted(){
     axios
-    .get(process.env.VUE_APP_IP_KOS + 'products')
+    .get(process.env.VUE_APP_IP_KANTOR + 'products')
     .then((response) => this.setProducts(response.data))
     .catch((error) => console.log(error));
   }

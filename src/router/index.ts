@@ -4,6 +4,8 @@ import OnlineStore from '../views/OnlineStore.vue'
 import ItemDetail from '../views/ItemDetail.vue'
 import Cart from '../views/Cart.vue'
 import CheckoutSuccess from '../views/CheckoutSuccess.vue'
+import LoginAdmin from '../views/LoginAdmin.vue'
+import DashboardAdmin from '../views/DashboardAdmin.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -33,6 +35,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/cart',
     name: 'cart',
     component: Cart
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginAdmin
+  },
+  {
+    path: '/dashboard',
+    name: 'dashboard',
+    component: DashboardAdmin
   },
   {
     path: '/checkout-success',

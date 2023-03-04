@@ -57,7 +57,7 @@ export default {
             if (this.order.order_qty && this.order.order_qty !== null && this.order.order_qty !== 0){
                 this.order.products = this.product;
                 axios
-                .post(process.env.VUE_APP_IP_KOS + 'keranjangs', this.order)
+                .post(process.env.VUE_APP_IP_KANTOR + 'keranjangs', this.order)
                 .then(() => {
                     this.$router.push({
                         path: "/cart"
@@ -81,7 +81,7 @@ export default {
     },
     mounted(){
         axios
-        .get(process.env.VUE_APP_IP_KOS + 'products/' + this.$route.params.id)
+        .get(process.env.VUE_APP_IP_KANTOR + 'products/' + this.$route.params.id)
         .then((response) => this.setProduct(response.data))
         .catch((error) => console.log(error))
     }

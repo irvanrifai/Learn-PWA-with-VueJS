@@ -48,7 +48,7 @@ import axios from 'axios';
   },
   mounted(){
     axios
-    .get(process.env.VUE_APP_IP_KOS + 'best_products')
+    .get(process.env.VUE_APP_IP_KANTOR + 'best_products')
     .then((response) => this.setProducts(response.data))
     .catch((error) => console.log(error));
   }

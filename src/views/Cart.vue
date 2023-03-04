@@ -136,7 +136,7 @@ export default {
     },
     deleteOrder(id) {
       axios
-        .delete(process.env.VUE_APP_IP_KOS + "keranjangs/" + id)
+        .delete(process.env.VUE_APP_IP_KANTOR + "keranjangs/" + id)
         .then(() => {
           this.toast.warning("Order deleted :(", {
             timeout: 2000,
@@ -144,31 +144,45 @@ export default {
 
           // auto hot reload when data deleted
           axios
-            .get(process.env.VUE_APP_IP_KOS + "keranjangs")
+            .get(process.env.VUE_APP_IP_KANTOR + "keranjangs")
             .then((response) => this.setOrder(response.data))
             .catch((error) => console.log(error));
         })
         .catch((error) => console.log(error));
     },
     checkout(){
-        if (this.ordered.name && this.ordered.no_order){
+        if (this.order && this.ordered.name && this.ordered.no_order){
             this.ordered.order = this.order;
             axios
-                .post(process.env.VUE_APP_IP_KOS + 'pesanans', this.ordered)
+                .post(process.env.VUE_APP_IP_KANTOR + 'pesanans', this.ordered)
                 .then(() => {
 
-                    this.ordered.map(function(item){
-                        return axios
-                        .delete(process.env.VUE_APP_IP_KOS + 'keranjangs/'+ item.id)
-                        .catch((error) => console.log(error));
+                  var data_id = []
+                  for (let i = 0; i <= this.order.length; i++){
+                    data_id.push(this.order[i]);
+                    // console.log(data_id);
+                    // console.log(data_id[0]);
+                    // console.log(data_id[0][i]);
+                    // console.log(data_id[0][i].id);
+
+                    console.log(this.order[i]['id'])
+                    // axios
+                    //     .delete(process.env.VUE_APP_IP_KANTOR + 'keranjangs/'+ this.order[i].id)
+                    //     .catch((error) => console.log(error));
+                  }
+
+                  axios
+                    .get(process.env.VUE_APP_IP_KANTOR + "keranjangs")
+                    .then((response) => this.setOrder(response.data))
+                    .catch((error) => console.log(error));
+
+                    this.toast.success("Checkout successfull :)", {
+                        timeout: 2000
                     });
 
                     this.$router.push({
                         path: "/checkout-success"
                     })
-                    this.toast.success("Checkout successfull :)", {
-                        timeout: 2000
-                    });
                 })
                 .catch((error) => {
                     console.log(error);
@@ -177,7 +191,7 @@ export default {
                     });
                 })
         }else{
-            this.toast.error("Name & Order number cannot be null", {
+            this.toast.error("Order, Name & Order number cannot be null", {
                 timeout: 2000,
             });
         }
@@ -185,7 +199,7 @@ export default {
   },
   mounted() {
     axios
-      .get(process.env.VUE_APP_IP_KOS + "keranjangs")
+      .get(process.env.VUE_APP_IP_KANTOR + "keranjangs")
       .then((response) => this.setOrder(response.data))
       .catch((error) => console.log(error));
   },

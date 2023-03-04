@@ -51,7 +51,7 @@
             </button>
           </form>
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <li class="nav-item mt-1">
               <router-link class="nav-link" to="/cart"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +67,9 @@
                 </svg>
                 <span class="badge text-bg-success ms-1">{{ updateOrder ? updateOrder.length : order_qty.length }}</span>
               </router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/login"><a class="btn btn-success">Login</a></router-link>
             </li>
           </ul>
         </div>
@@ -93,7 +96,7 @@ export default {
   },
   mounted(){
     axios
-    .get(process.env.VUE_APP_IP_KOS + 'keranjangs')
+    .get(process.env.VUE_APP_IP_KANTOR + 'keranjangs')
     .then((response) => this.setOrderQty(response.data))
     .catch((error) => console.log(error));
   }
