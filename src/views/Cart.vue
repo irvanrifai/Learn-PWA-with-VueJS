@@ -127,7 +127,7 @@ export default {
   data() {
     return {
       order: [],
-      ordered: []
+      ordered: {},
     };
   },
   methods: {
@@ -156,20 +156,12 @@ export default {
             axios
                 .post(process.env.VUE_APP_IP_KANTOR + 'pesanans', this.ordered)
                 .then(() => {
-
-                  var data_id = []
-                  for (let i = 0; i <= this.order.length; i++){
-                    data_id.push(this.order[i]);
-                    // console.log(data_id);
-                    // console.log(data_id[0]);
-                    // console.log(data_id[0][i]);
-                    // console.log(data_id[0][i].id);
-
-                    console.log(this.order[i]['id'])
-                    // axios
-                    //     .delete(process.env.VUE_APP_IP_KANTOR + 'keranjangs/'+ this.order[i].id)
-                    //     .catch((error) => console.log(error));
-                  }
+                    this.order.map(function(item){
+                      return axios
+                          .delete(process.env.VUE_APP_IP_KANTOR + 'keranjangs/'+ item.id)
+                          .catch((error) => console.log(error));
+                      
+                    })
 
                   axios
                     .get(process.env.VUE_APP_IP_KANTOR + "keranjangs")

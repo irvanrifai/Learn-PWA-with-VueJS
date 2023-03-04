@@ -115,20 +115,7 @@
       "image": "iphone.jpg"
     }
   ],
-  "keranjangs": [
-    {
-      "order_qty": 1,
-      "products": {
-        "id": 3,
-        "product_code": "Nike-Act",
-        "name": "Nike Shirt",
-        "price": 18000,
-        "is_ready": true,
-        "image": "nike-s.jpg"
-      },
-      "id": 1
-    }
-  ],
+  "keranjangs": [],
   "pesanans": [
     {
       "name": "Irvan Rifaí",
@@ -278,45 +265,38 @@
       ],
       "id": 5
     },
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    []
+    {
+      "name": "a",
+      "no_order": "aaa1",
+      "order": [
+        {
+          "order_qty": 3,
+          "note": "w",
+          "products": {
+            "id": 10,
+            "product_code": "iphone",
+            "name": "Iphone 12 Pro",
+            "price": 12000000,
+            "is_ready": true,
+            "image": "iphone.jpg"
+          },
+          "id": 1
+        },
+        {
+          "order_qty": 1,
+          "note": "a",
+          "products": {
+            "id": 8,
+            "product_code": "printer",
+            "name": "Printer HP",
+            "price": 100000,
+            "is_ready": true,
+            "image": "printer.jpg"
+          },
+          "id": 2
+        }
+      ],
+      "id": 6
+    }
   ]
 }
