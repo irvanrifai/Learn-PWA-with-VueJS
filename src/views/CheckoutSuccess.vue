@@ -3,9 +3,11 @@
         <Navbar/>
         <div class="container mt-4">
             <div class="row">
-                <div class="col-md-12 justify-content-center align-self-center">
+                <div class="col-md-6 p-1 justify-content-center align-self-center">
                     <img src="../assets/img/wait.png" alt="wait-img" width="400" />
-                    <small class="text-success text-sm-center">Transaction on proccess, be patient...</small>
+                </div>
+                <div class="col-md-6 p-4 justify-content-center align-self-center">
+                    <small class="text-success text-sm-center"><b>Transaction on proccess, Please be patient...</b></small>
                 </div>
             </div>
         </div>

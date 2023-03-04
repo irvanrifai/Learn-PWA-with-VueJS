@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard-admin">
+    <Navbar/>
     <div class="container">
-        <Navbar/>
       <div class="row">
         <div class="col">
           <div class="table-responsive mt-4">

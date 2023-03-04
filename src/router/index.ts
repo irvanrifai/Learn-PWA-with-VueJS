@@ -6,6 +6,7 @@ import Cart from '../views/Cart.vue'
 import CheckoutSuccess from '../views/CheckoutSuccess.vue'
 import LoginAdmin from '../views/LoginAdmin.vue'
 import DashboardAdmin from '../views/DashboardAdmin.vue'
+import CUDItem from '../views/CUDItem.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -45,6 +46,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/dashboard',
     name: 'dashboard',
     component: DashboardAdmin
+  },
+  {
+    path: '/map-item',
+    name: 'map-item',
+    component: CUDItem
   },
   {
     path: '/checkout-success',
