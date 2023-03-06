@@ -41,6 +41,7 @@
                   </td>
                   <td align="right">Rp. {{ item.price }}</td>
                   <td align="center">
+                    <router-link :to="'/edit-item/' + item.id" class="text-warning"><b-icon-pencil /></router-link> | 
                     <a @click="deleteItem(item.id)" class="text-danger">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -66,6 +66,11 @@ const routes: Array<RouteRecordRaw> = [
     component: CUDItem
   },
   {
+    path: '/edit-item/:id',
+    name: 'edit-item',
+    component: CUDItem
+  },
+  {
     path: '/setting',
     name: 'setting',
     component: SettingSystem

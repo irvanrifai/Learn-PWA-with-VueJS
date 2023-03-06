@@ -53,8 +53,8 @@
     {
       "id": 4,
       "product_code": "Nike-gala",
-      "name": "Nike Gala",
-      "price": 2000000,
+      "name": "Nike Gala-gala3",
+      "price": 2230000,
       "is_ready": true,
       "image": "nike-gl.jpg"
     },
@@ -105,6 +105,14 @@
       "price": 12000000,
       "is_ready": true,
       "image": "iphone.jpg"
+    },
+    {
+      "image": "nike.jpg",
+      "product_code": "nike",
+      "name": "Nike Hypervenom",
+      "price": 3400000,
+      "is_ready": true,
+      "id": 11
     }
   ],
   "keranjangs": [],
