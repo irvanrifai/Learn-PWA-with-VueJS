@@ -18,4 +18,6 @@ import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 // import { useToast } from 'vue-toastification'
 
-createApp(App).use(store).use(router).use(Toast).mount('#app')
+import { BootstrapIconsPlugin } from 'bootstrap-icons-vue';
+
+createApp(App).use(store).use(router).use(Toast).use(BootstrapIconsPlugin).mount('#app')

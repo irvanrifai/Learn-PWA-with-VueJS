@@ -35,6 +35,14 @@
   ],
   "products": [
     {
+      "id": 1,
+      "product_code": "Nike-H",
+      "name": "Nike Hypervenom",
+      "price": 1000000,
+      "is_ready": true,
+      "image": "nike.jpg"
+    },
+    {
       "id": 2,
       "product_code": "Ball-H",
       "name": "Ball Hypervenom",

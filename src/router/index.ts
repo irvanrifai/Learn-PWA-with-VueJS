@@ -6,7 +6,10 @@ import Cart from '../views/Cart.vue'
 import CheckoutSuccess from '../views/CheckoutSuccess.vue'
 import LoginAdmin from '../views/LoginAdmin.vue'
 import DashboardAdmin from '../views/DashboardAdmin.vue'
+import MOrder from '../views/MOrder.vue'
+import ListItem from '../views/ListItem.vue'
 import CUDItem from '../views/CUDItem.vue'
+import SettingSystem from '../views/SettingSystem.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -48,9 +51,24 @@ const routes: Array<RouteRecordRaw> = [
     component: DashboardAdmin
   },
   {
-    path: '/map-item',
-    name: 'map-item',
+    path: '/map-order',
+    name: 'map-order',
+    component: MOrder
+  },
+  {
+    path: '/item',
+    name: 'item',
+    component: ListItem
+  },
+  {
+    path: '/cud-item',
+    name: 'cud-item',
     component: CUDItem
+  },
+  {
+    path: '/setting',
+    name: 'setting',
+    component: SettingSystem
   },
   {
     path: '/checkout-success',

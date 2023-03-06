@@ -24,20 +24,17 @@
                 >Store</router-link
               >
             </li>
-            <!-- <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Admin
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><router-link class="nav-link" to="/item">Item</router-link></li>
+                <li><router-link class="nav-link" to="/dashboard">Order</router-link></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><router-link class="nav-link" to="/setting">Setting</router-link></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li> -->
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -69,7 +66,7 @@
               </router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/login"><a class="btn btn-success">Login</a></router-link>
+              <router-link class="nav-link" to="/login"><a class="btn btn-success"><b-icon-person /> Login</a></router-link>
             </li>
           </ul>
         </div>
